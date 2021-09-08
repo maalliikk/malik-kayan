@@ -1,1 +1,36 @@
-Flutter Learning
+void main(){
+var name="Malik Kayan";
+var fname="Muhammad Siddique Malik"; 
+var sclass="10th";
+var section="B";
+var school="HAPPY PALACE SCHOOL";
+var area="AYESHA MANZIL CAMPUS";
+var year="2021 EXAMINATION";   
+var tmaths=100;
+var maths= 72;
+var tphysics=100; 
+var physics=93;  
+var tchemistry=100;  
+var chemistry=87;
+var tbio=100;  
+var bio=79;  
+var tenglish=100;  
+var english=75;  
+var turdu=100;  
+var urdu=89;  
+var tislamiat=100;  
+var islamiat=92;
+var marksobtained=(maths+physics+chemistry+bio+english+urdu+islamiat);
+var totalmarks=(tmaths+tphysics+tchemistry+tbio+tenglish+turdu+tislamiat);  
+var pmaths=(maths/tmaths)*100;  
+var pphysics=(physics/tphysics)*100;  
+var pchemistry=(chemistry/tchemistry)*100;  
+var pbio=(bio/tbio)*100;  
+var penglish=(english/tenglish)*100;  
+var purdu=(urdu/turdu)*100;  
+var pislamiat=(islamiat/tislamiat)*100;  
+var ptotal=(marksobtained/totalmarks)*100;  
+print("\t\t\t\t\t${school}\n\t\t\t\t       ${area}\n\t\t\t\t\t ${year}\n\n\n\nName: ${name}\nFather Name: ${fname}\nClass: ${sclass}\n\n\t\t\t\t|\t\t\t|\t\t\t|\nSUBJECT\t\tTOTAL MARKS\t|\tOBTAINED MARKS\t|\tPERCENTAGE\t|\tGRADE\n\t\t\t\t|\t\t\t|\t\t\t|\nMaths\t\t${tmaths}\t\t|\t${maths}\t\t|\t${pmaths}\t\t|\tB\n\t\t\t\t|\t\t\t|\t\t\t|\nPhysics\t\t${tphysics}\t\t|\t${physics}\t\t|\t${pphysics}\t\t|\tA\n\t\t\t\t|\t\t\t|\t\t\t|\nChemistry\t${tchemistry}\t\t|\t${chemistry}\t\t|\t${pchemistry}\t\t|\tA\n\t\t\t\t|\t\t\t|\t\t\t|\nBiology\t\t${tbio}\t\t|\t${bio}\t\t|\t${pbio}\t\t|\tB\n\t\t\t\t|\t\t\t|\t\t\t|\nEnglish\t\t${tenglish}\t\t|\t${english}\t\t|\t${penglish}\t\t|\tB\n\t\t\t\t|\t\t\t|\t\t\t|\nUrdu\t\t${turdu}\t\t|\t${urdu}\t\t|\t${purdu}\t\t|\tA\n\t\t\t\t|\t\t\t|\t\t\t|\nIslamiat\t${tislamiat}\t\t|\t${islamiat}\t\t|\t${pislamiat}\t\t|\tA\n\t\t\t\t|\t\t\t|\t\t\t|\n--------------------------------------------------------------------------------------------------------\n\t\t\t\t|\t\t\t|\t\t\t|\n\t\t\t\t|\t\t\t|\t\t\t|");
+
+
+}
