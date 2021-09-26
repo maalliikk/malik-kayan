@@ -1,36 +1,121 @@
-void main(){
-var name="Malik Kayan";
-var fname="Muhammad Siddique Malik"; 
-var sclass="10th";
-var section="B";
-var school="HAPPY PALACE SCHOOL";
-var area="AYESHA MANZIL CAMPUS";
-var year="2021 EXAMINATION";   
-var tmaths=100;
-var maths= 72;
-var tphysics=100; 
-var physics=93;  
-var tchemistry=100;  
-var chemistry=87;
-var tbio=100;  
-var bio=79;  
-var tenglish=100;  
-var english=75;  
-var turdu=100;  
-var urdu=89;  
-var tislamiat=100;  
-var islamiat=92;
-var marksobtained=(maths+physics+chemistry+bio+english+urdu+islamiat);
-var totalmarks=(tmaths+tphysics+tchemistry+tbio+tenglish+turdu+tislamiat);  
-var pmaths=(maths/tmaths)*100;  
-var pphysics=(physics/tphysics)*100;  
-var pchemistry=(chemistry/tchemistry)*100;  
-var pbio=(bio/tbio)*100;  
-var penglish=(english/tenglish)*100;  
-var purdu=(urdu/turdu)*100;  
-var pislamiat=(islamiat/tislamiat)*100;  
-var ptotal=(marksobtained/totalmarks)*100;  
-print("\t\t\t\t\t${school}\n\t\t\t\t       ${area}\n\t\t\t\t\t ${year}\n\n\n\nName: ${name}\nFather Name: ${fname}\nClass: ${sclass}\n\n\t\t\t\t|\t\t\t|\t\t\t|\nSUBJECT\t\tTOTAL MARKS\t|\tOBTAINED MARKS\t|\tPERCENTAGE\t|\tGRADE\n\t\t\t\t|\t\t\t|\t\t\t|\nMaths\t\t${tmaths}\t\t|\t${maths}\t\t|\t${pmaths}\t\t|\tB\n\t\t\t\t|\t\t\t|\t\t\t|\nPhysics\t\t${tphysics}\t\t|\t${physics}\t\t|\t${pphysics}\t\t|\tA\n\t\t\t\t|\t\t\t|\t\t\t|\nChemistry\t${tchemistry}\t\t|\t${chemistry}\t\t|\t${pchemistry}\t\t|\tA\n\t\t\t\t|\t\t\t|\t\t\t|\nBiology\t\t${tbio}\t\t|\t${bio}\t\t|\t${pbio}\t\t|\tB\n\t\t\t\t|\t\t\t|\t\t\t|\nEnglish\t\t${tenglish}\t\t|\t${english}\t\t|\t${penglish}\t\t|\tB\n\t\t\t\t|\t\t\t|\t\t\t|\nUrdu\t\t${turdu}\t\t|\t${urdu}\t\t|\t${purdu}\t\t|\tA\n\t\t\t\t|\t\t\t|\t\t\t|\nIslamiat\t${tislamiat}\t\t|\t${islamiat}\t\t|\t${pislamiat}\t\t|\tA\n\t\t\t\t|\t\t\t|\t\t\t|\n--------------------------------------------------------------------------------------------------------\n\t\t\t\t|\t\t\t|\t\t\t|\n\t\t\t\t|\t\t\t|\t\t\t|");
+1 . How to duplicate repeating items inside a Dart list?
+Problem
+Consider the code:
+final List<Ball> _ballList = [Ball (), Ball (), Ball (), Ball (), Ball (),]
+What can be done in order to not repeat Ball () multiple times?
 
+Ans --------------------
 
+2. How to get the difference of lists in Flutter/Dart?
+Problem
+Consider you have two lists [1,2,3,4,5,6,7] and [3,5,6,7,9,10]. How
+Would you get the difference as output? eg. [1, 2, 4]
+
+Ans.
+void main () {
+var list = {1,2,3,4,5,6,7};
+var list2 = {3,5,6,7,9,10};
+intList.removeWhere((e) => intList2.contains(e));
+print (intList);
 }
+
+3. Let’s say you are given a list saved in a variable:
+Consider a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100].
+Write a code that takes this list and makes a new list that has only the
+even elements of this list in it.
+
+Ans.
+void main (){
+var a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+var b =[ a.retainWhere((e)=>e%2==0)];
+print(b);
+}
+
+4. Ask the user for a number and determine whether the number is
+prime or not.
+
+Ans. -----------------
+
+5. Write a program to print a multiplication table of 7 length 15.
+
+Ans.
+void main (){
+var number =7;
+  
+   for(var i=number;i<=105;i=i+number  ){
+     print (i);
+   } 
+  }
+
+6. Write a program to print items of the following array using for loop:
+fruits = [“apple”, “banana”, “mango”, “orange” , “strawberry”].
+
+Ans. ------------------
+
+
+7. Write a program to print multiples of 5 ranging 1 to 100.
+
+Ans.
+void main (){
+var number=5;
+  
+   for(var i=number;i<=100;i=i+number ){
+     print (i);
+   } 
+  }
+
+ 
+8. The Temperature Converter: It’s hot out! Let’s make a converter
+based on the steps here.
+a. Store a Celsius temperature into a variable.
+b. Convert it to Fahrenheit & output “NNoC is NNoF”.
+c. Now store a Fahrenheit temperature into a variable.
+d. Convert it to Celsius & output “NNoF is NNoC”.
+
+Ans.
+Celsius to Fahrenheit :
+void main (){
+var celsius = 37 ;
+  var fahrenheit = (celsius*1.8)+32;
+  print ("$fahrenheit NNoC is NNoF "); 
+     }
+
+Fahrenheit to Celsius :
+ void main (){
+var fahrenheit = 103 ;
+  var celsius = (fahrenheit-32)*5/9 ;
+  print ("$celsius NNoF is NNoC "); 
+     }
+
+9. Write a program to create a calculator for +, -, *, / & % using if
+statements. Take the following input:
+a. First number Second number
+b. Operation (+, -, *, /, %)
+
+Ans.
+void main (){
+var firstNumber = 19;
+var secondNumber = 8; 
+  var operation = "${firstNumber+secondNumber},${firstNumber-secondNumber},${firstNumber*secondNumber},${firstNumber/secondNumber},${firstNumber%secondNumber}";  
+print(operation[1]);
+ }
+
+
+10. Write a program that takes a character (I. e. string of length 1)
+and returns true if it is a vowel, false otherwise.
+
+
+
+Ans.
+void main (){
+var vowel=["a","e","i","o","u"];
+ var alphabet = "b";
+  if (vowel.contains(alphabet)){
+    print (true);
+  }else{
+    print  (false);
+  }
+ }
+
+
+ 
